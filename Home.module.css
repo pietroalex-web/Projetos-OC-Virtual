@@ -1,0 +1,84 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* Fundo com Imagem e sobreposição azul */
+  background: 
+    linear-gradient(rgba(8, 45, 74, 0.75), rgba(27, 117, 187, 0.75)),
+    url('entrada.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Título fixo no canto superior esquerdo */
+.title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Container que segura a lista de botões */
+.menuContainer {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Botões dos locais */
+.buttonItem {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #082d4a;
+  border: 2px solid transparent;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+/* Efeito ao passar o mouse (Estilo The Sims com o verde neon) */
+.buttonItem:hover {
+  background: #55b646; /* Verde Plumbob */
+  color: #ffffff;
+  transform: translateX(8px); /* Desloca o botão levemente para a direita */
+  box-shadow: 0 6px 15px rgba(85, 182, 70, 0.5);
+  border-color: #3e8e32;
+}
+
+/* Efeito ao clicar no botão */
+.buttonItem:active {
+  transform: translateX(4px) scale(0.98);
+}
+
+.menuContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões fiquem lado a lado e quebrem linha */
+  gap: 15px;      /* Espaçamento entre os botões */
+  width: 100%;
+}
+
+.buttonItem {
+  flex: 1 1 calc(25% - 15px); 
+  min-width: 200px;           
+}
