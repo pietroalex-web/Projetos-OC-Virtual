@@ -1,0 +1,57 @@
+/* Container Principal que recebe a imagem de fundo */
+.card-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 500px; /* Define uma altura para a imagem aparecer */
+  
+  /* IMPORTANTE: Adicione o caminho da sua imagem aqui */
+  background-image: url('./informaticaimg.jpg'); 
+  background-size: cover;      /* Faz a imagem cobrir todo o container */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  
+  border-radius: 12px;
+  border: 2px solid #33aaff; /* Borda azul em volta */
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Transparente sobreposto no canto superior direito */
+.overlay-card {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  background: rgba(18, 18, 38, 0.85); /* Fundo escuro translúcido */
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Bolinha roxa no topo do card */
+.card-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.user-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #2b1f6d;
+  border-radius: 50%;
+}
+
+/* Estilização do texto */
+.overlay-card p {
+  color: #e0e0e0;
+}
+
+.overlay-card strong {
+  color: #ffffff;
+}
