@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: 
+    linear-gradient(rgba(8, 45, 74, 0.75), rgba(27, 117, 187, 0.75)),
+    url('ImagemFundo.svg') no-repeat center center fixed; 
+  
+  background-size: cover; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px); 
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4),
+              0 0 20px rgba(85, 182, 70, 0.5); 
+  border: 3px solid #55b646; 
+}
+
+
+h1 {
+  color: #082d4a;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.menu-item {
+  background: #ffffff;
+  color: #1b75bb;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.menu-item:hover {
+  background: #55b646;
+  color: #ffffff;
+  border-color: #3e8e32;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(85, 182, 70, 0.4);
+}
